@@ -4,6 +4,8 @@ import NavBar from './app/components/NavBar';
 import SubMenu from './app/components/SubMenu';
 import Routes from './Routes';
 import { withRouter } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class App extends Component {
 

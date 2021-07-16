@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300&display=swap');
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: #fff;
+    margin-right: 5%;
+}
+
