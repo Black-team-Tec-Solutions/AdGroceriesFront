@@ -11,10 +11,7 @@ const Routes =()=>( //el arrowfunction tiene implicito el return
             <Route exact path="/" component={Home}/>
             <Route exact path="/login" component={Auth}/>
             <Route exact path="/signup" component={Auth}/>
-            <Route exact path="/onboarding" component={()=><h1>Mensaje de bienvenida</h1>}/>
-            <Route exact path="/onboarding/firstStep" component={()=><h1>Cuantos días? Cuantas Comidas?</h1>}/>
-            <Route exact path="/onboarding/secondStep" component={()=><h1>Detalle de comidas</h1>}/>
-            <Route exact path="/main" component={()=><h1>pagina principal</h1>}/>
+            <Route exact path="/campus" component={()=><h1>este es mi campus</h1>}/>
     </Switch>
 )
 
