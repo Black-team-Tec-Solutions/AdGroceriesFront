@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './App.css';
-import NavBar from './app/components/NavBar';
+import NavBar from './app/components/navBar/NavBar';
 import SubMenu from './app/components/SubMenu';
 import Routes from './Routes';
 import { withRouter } from "react-router-dom";

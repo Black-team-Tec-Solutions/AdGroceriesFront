@@ -19,6 +19,8 @@ const Welcome = () => (
                 </div>
                
                 <p className="masthead-subheading font-weight-light mb-0">Ya eres parte de AdGroceries</p>
+
+                <button type="button" className="btn btn-secondary btn-lg">Siguiente</button>
             </div> 
            
             
