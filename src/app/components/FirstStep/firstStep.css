@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300&display=swap');
+
+
+
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color:#ffff;
+    
+}
+
+.sect1{
+    margin: 40px, 50px, 20px, 50px;
+    padding-bottom: 90px;
+}
+
+.box{
+    margin-left: 12px;
+    border-color: #00ba94 ;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-top: 50px;
+    
+}
+
+.container {
+    margin-top: -5%;
+}

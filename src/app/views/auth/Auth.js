@@ -4,13 +4,17 @@ import logo from '../../assets/image/logo.png'
 import TextInput from '../../components/TextInput';
 import Button from '../../components/Button'
 import {Link} from 'react-router-dom'
+import {signupPoint, loginPoint} from '../../services/auth-ws'
 
 
 export default class Auth extends Component{
     state={
         user:{
-            //email:''
-            //password:''
+            nombre: '',
+            email:'',
+            password:'',
+            confirmPassword:''
+
         }
     }
     handleChange = (e) => {
@@ -25,7 +29,15 @@ export default class Auth extends Component{
     }
     handleSubmit = (e) => {
         e.preventDefault()
-        console.log("Lo que hay ene l user", this.state.user)
+        signupPoint(this.state.user)
+        .then(
+            res => {
+                
+                localStorage.setItem( "user",JSON.stringify(res.data.result) )
+            this.props.history.push('/signup')
+        })
+    .catch(error => (error))
+        console.log("user data", this.state.user)
     }
 
     render(){
@@ -43,16 +55,16 @@ export default class Auth extends Component{
                         {match.path === "/signup" && 
                         
                         <TextInput
-                            name="name"
+                            name="nombre"
                             textLabel='Nombre'
-                            placeholder='Juan Perres'
+                            placeholder='Juan Perez'
                             handleChange={handleChange}
                         />}
 
                         <TextInput
                         name="email"
                         textLabel='Correo Electornico'
-                        placeholder='perro@gay.com'
+                        placeholder='luis@gmail.com'
                         handleChange={handleChange}
                         
                         />
@@ -69,13 +81,14 @@ export default class Auth extends Component{
                     {match.path === "/signup" && 
                         
                         <TextInput
-                            name="confirmaPAss"
-                            textLabel='Confirma la contra'
+                            name="confirmPassword"
+                            textLabel='Confirma la contrasena'
+                            type='password'
                             placeholder='.........'
                             handleChange={handleChange}
                         />}
                         <Button
-                        text='Entrar'
+                        text='Registrate'
                         />
                         
                         
