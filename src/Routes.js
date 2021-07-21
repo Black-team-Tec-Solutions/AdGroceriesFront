@@ -2,6 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import FirstStep from './app/components/FirstStep/FirsStep'
 import Welcome from './app/components/Welcome/Welcome'
+import Workout from './app/components/workOut/Workout'
 //vistas que mostrare
 import {Home} from './app/views'
 import Auth from './app/views/auth/Auth'
@@ -17,6 +18,8 @@ const Routes =()=>( //el arrowfunction tiene implicito el return
             <Route exact path="/onboarding/firstStep" component={FirstStep}/>
             <Route exact path="/onboarding/secondStep" component={()=><h1>Detalle de comidas</h1>}/>
             <Route exact path="/main" component={()=><h1>pagina principal</h1>}/>
+            <Route exact path="/workout" component={Workout}/>
+
     </Switch>
 )
 
