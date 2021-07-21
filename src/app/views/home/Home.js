@@ -27,7 +27,7 @@ const Home = ({history,location,match}) => (
             <section class="page-section text-white mb-0" id="about">
             <div class="container">
                
-                <h2 class="page-section-heading text-center text-uppercase">Acerca de AdGroceries</h2>
+                <h2 class="page-section-heading text-center text-uppercase"><a id="#about">Acerca de AdGroceries</a></h2>
                
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -57,7 +57,7 @@ const Home = ({history,location,match}) => (
 
         <section class="page-section" id="contact">
             <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"><a id="#contact">Contact Me</a></h2>
             <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
