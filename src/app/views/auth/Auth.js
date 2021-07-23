@@ -24,8 +24,40 @@ export default class Auth extends Component{
          this.setState({ user })
     }
     handleSubmit = (e) => {
+        const {match,history} = this.props
+        const {user} = this.state
         e.preventDefault()
-        console.log("Lo que hay ene l user", this.state.user)
+        match.path === "/signup" ? signupPoint(user)
+        .then(
+            res => {
+                
+                localStorage.setItem( "user",JSON.stringify(res.data.result) )
+            this.props.history.push('/onboarding')
+        })
+    .catch(error => (error)): loginPoint (user)
+    .then(
+        res => {
+            
+            localStorage.setItem( "user",JSON.stringify(res.data.result) )
+            switch (res.data.result.stage){
+                case 0:
+                    this.props.history.push('/onboarding');
+                break;
+                case 1:
+                    this.props.history.push('/onboarding/firstStep');
+                break;
+                case 2:
+                    this.props.history.push('/onboarding/secondStep');
+                break;
+                case 3:
+                    this.props.history.push('/main');
+                break;
+            }
+    })
+        .catch(error => (error))
+
+        
+        
     }
 
     render(){

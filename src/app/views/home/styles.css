@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300&display=swap');
+
 .home-container{
     width: 100vw;
     height: 100vh;
@@ -32,4 +34,43 @@
     font:Gotham Titles;
     margin: 20px;
 
+}
+
+span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.masthead{
+    background-color:#00ba94; 
+}
+
+.masthead-avatar{
+    margin-top: 100px;
+}
+
+.page-section{
+    background-color: #fff
+}
+
+.container{
+    margin-top: 50px;
+}
+
+h2{
+    
+    color:#2c3e50;
+}
+
+.lead{
+    color:gray;
+}
+
+.assistant{
+    margin-left: 40%;
+}
+
+.fruits {
+    margin-left: 26%;
 }
