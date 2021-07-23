@@ -4,17 +4,13 @@ import logo from '../../assets/image/logo.png'
 import TextInput from '../../components/TextInput';
 import Button from '../../components/Button'
 import {Link} from 'react-router-dom'
-import {signupPoint, loginPoint} from '../../services/auth-ws'
 
 
 export default class Auth extends Component{
     state={
         user:{
-            nombre: '',
-            email:'',
-            password:'',
-            confirmPassword:''
-
+            //email:''
+            //password:''
         }
     }
     handleChange = (e) => {
@@ -28,16 +24,40 @@ export default class Auth extends Component{
          this.setState({ user })
     }
     handleSubmit = (e) => {
+        const {match,history} = this.props
+        const {user} = this.state
         e.preventDefault()
-        signupPoint(this.state.user)
+        match.path === "/signup" ? signupPoint(user)
         .then(
             res => {
                 
                 localStorage.setItem( "user",JSON.stringify(res.data.result) )
-            this.props.history.push('/signup')
+            this.props.history.push('/onboarding')
         })
-    .catch(error => (error))
-        console.log("user data", this.state.user)
+    .catch(error => (error)): loginPoint (user)
+    .then(
+        res => {
+            
+            localStorage.setItem( "user",JSON.stringify(res.data.result) )
+            switch (res.data.result.stage){
+                case 0:
+                    this.props.history.push('/onboarding');
+                break;
+                case 1:
+                    this.props.history.push('/onboarding/firstStep');
+                break;
+                case 2:
+                    this.props.history.push('/onboarding/secondStep');
+                break;
+                case 3:
+                    this.props.history.push('/main');
+                break;
+            }
+    })
+        .catch(error => (error))
+
+        
+        
     }
 
     render(){
@@ -55,16 +75,16 @@ export default class Auth extends Component{
                         {match.path === "/signup" && 
                         
                         <TextInput
-                            name="nombre"
+                            name="name"
                             textLabel='Nombre'
-                            placeholder='Juan Perez'
+                            placeholder='Juan Perres'
                             handleChange={handleChange}
                         />}
 
                         <TextInput
                         name="email"
                         textLabel='Correo Electornico'
-                        placeholder='luis@gmail.com'
+                        placeholder='perro@gay.com'
                         handleChange={handleChange}
                         
                         />
@@ -81,14 +101,13 @@ export default class Auth extends Component{
                     {match.path === "/signup" && 
                         
                         <TextInput
-                            name="confirmPassword"
-                            textLabel='Confirma la contrasena'
-                            type='password'
+                            name="confirmaPAss"
+                            textLabel='Confirma la contra'
                             placeholder='.........'
                             handleChange={handleChange}
                         />}
                         <Button
-                        text='Registrate'
+                        text='Entrar'
                         />
                         
                         

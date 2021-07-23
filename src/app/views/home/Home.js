@@ -2,20 +2,18 @@ import React from 'react';
 import './styles.css'
 import logo from '../../assets/image/logo.png'
 import {Link} from 'react-router-dom'
-import NavBar from '../../components/navBar/NavBar';
-import frutas from '../../assets/image/frutas.jpeg'
-import oficina from '../../assets/image/oficina.jpeg'
+
 
                 //react.router-dom por defecto
 const Home = ({history,location,match}) => (
 
   
   
-    <div classNameName="home-container">
-         <NavBar>
+    <div className="home-container">
+            {/* <NavBar>
        
-       </NavBar>
-       <header class="masthead text-white text-center">
+       </NavBar>   */} 
+       <header className="masthead text-white text-center">
        <div className="container d-flex align-items-center flex-column cont-test">
                 
                 <img className="masthead-avatar mb-5" src={logo} height="500px" width="500px" alt="..." />
@@ -24,19 +22,19 @@ const Home = ({history,location,match}) => (
             </div> 
             </header>
 
-            <section class="page-section text-white mb-0" id="about">
-            <div class="container">
+            <section className="page-section text-white mb-0" id="about">
+            <div className="container">
                
-                <h2 class="page-section-heading text-center text-uppercase">Acerca de AdGroceries</h2>
+                <h2 className="page-section-heading text-center text-uppercase"><a id="#about">Acerca de AdGroceries</a></h2>
                
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+                <div className="divider-custom divider-light">
+                    <div className="divider-custom-line"></div>
+                    <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
+                    <div className="divider-custom-line"></div>
                 </div>
                 
-                <div class="row">
-                    <div class=" ms-auto"><p class="lead">Nos encanta la salud y bienestar de las personas, a favor de ello esta aplicacion
+                <div className="row">
+                    <div className=" ms-auto"><p className="lead">Nos encanta la salud y bienestar de las personas, a favor de ello esta aplicacion
                     sera tu asistente y administrador personal de alimentos, funciona 
             como un storage virtual donde podras tener una mejor organizacion y 
             planificacion de tu stock de alimentos</p></div>
@@ -55,34 +53,34 @@ const Home = ({history,location,match}) => (
             </div>
         </section>
 
-        <section class="page-section" id="contact">
-            <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-            <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+        <section className="page-section" id="contact">
+            <div className="container">
+            <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0"><a id="#contact">Contact Me</a></h2>
+            <div className="divider-custom">
+                    <div className="divider-custom-line"></div>
+                    <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
+                    <div className="divider-custom-line"></div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
+                <div className="row justify-content-center">
+                    <div className="col-lg-8 col-xl-7">
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="form-floating mb-3">
+                    <div className="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <div className="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <div className="form-floating mb-3">
+                                <input className="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <div className="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div className="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
-                        <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                        <div className="form-floating mb-3">
+                                <input className="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <div className="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            <button className="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
 
 
                         </form>
@@ -101,7 +99,6 @@ const Home = ({history,location,match}) => (
         
         
         
-
 </div>*/}
        {/* <div classNameName="title-section">
             <img src={logo} width="50%" />

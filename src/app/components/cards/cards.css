@@ -11,15 +11,15 @@ p{
     font-size: 35px;
     color: #fff
 }
-.cont-test{
-    width: 100vw;
+.container{
+    width: 400vw;
     height: 100vh;
     margin-top: -25px;
     background-color: #00ba94;
 }
 
 .divider-custom {
-    margin: 1.25rem 0 1.5rem;
+    margin: -2.25rem 0 1.5rem;
     width: 100%;
     display: flex;
     justify-content: center;

@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300&display=swap');
 
-
-
-
-
-
-
 .home-container{
     width: 100vw;
     height: 100vh;
@@ -13,14 +7,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
 }
 
 .img-background {
-    margin-left:-10px;
-    margin-top: -50px;
-    margin-right: -60px;
-    background-color:#00ba94;
+    background-image: url("../../assets/image/logo.png");
     background-size: cover;
     width: 60vw;
     height: 100vh;
@@ -28,10 +18,10 @@
 }
 
 .title-section {
-    width: 20vw;
-    background-color: #fff;
+    width: 40vw;
+    background-color: #2D364C;
     height: 100vh;
-    padding: 4%;
+    padding: 2%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -40,7 +30,7 @@
 }
 
 .title-text {
-    color:gray;
+    color:#fff;
     font:Gotham Titles;
     margin: 20px;
 
@@ -84,4 +74,3 @@ h2{
 .fruits {
     margin-left: 26%;
 }
-

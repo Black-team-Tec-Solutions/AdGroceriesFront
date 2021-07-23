@@ -1,5 +1,6 @@
 import axios from 'axios'
 
+
 //validar si mi apliacion esta en deploy (prod)
 
 const iProdcution = process.env.NODE_ENV === 'production'
@@ -8,6 +9,7 @@ const baseURL = iProdcution ? "https://yani666.herokuapp.com/api" : "http://loca
 
 
 axios.defaults.withCredentials = true
+
 
 export const _api = axios.create({
     baseURL,

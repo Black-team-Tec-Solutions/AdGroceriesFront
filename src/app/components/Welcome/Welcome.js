@@ -20,7 +20,8 @@ const Welcome = () => (
                
                 <p className="masthead-subheading font-weight-light mb-0">Ya eres parte de AdGroceries</p>
 
-                <button type="button" className="btn btn-secondary btn-lg">Siguiente</button>
+                <button type="button" className="btn btn-secondary btn-lg">Alimentacion</button>
+                <button type="button" className="btn btn-secondary btn-lg">Ejercicio</button>
             </div> 
            
             
