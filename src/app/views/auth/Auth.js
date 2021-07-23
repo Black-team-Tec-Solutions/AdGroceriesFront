@@ -4,17 +4,13 @@ import logo from '../../assets/image/logo.png'
 import TextInput from '../../components/TextInput';
 import Button from '../../components/Button'
 import {Link} from 'react-router-dom'
-import {signupPoint, loginPoint} from '../../services/auth-ws'
 
 
 export default class Auth extends Component{
     state={
         user:{
-            nombre: '',
-            email:'',
-            password:'',
-            confirmPassword:''
-
+            //email:''
+            //password:''
         }
     }
     handleChange = (e) => {
@@ -79,16 +75,16 @@ export default class Auth extends Component{
                         {match.path === "/signup" && 
                         
                         <TextInput
-                            name="nombre"
+                            name="name"
                             textLabel='Nombre'
-                            placeholder='Juan Perez'
+                            placeholder='Juan Perres'
                             handleChange={handleChange}
                         />}
 
                         <TextInput
                         name="email"
                         textLabel='Correo Electornico'
-                        placeholder='luis@gmail.com'
+                        placeholder='perro@gay.com'
                         handleChange={handleChange}
                         
                         />
@@ -105,14 +101,13 @@ export default class Auth extends Component{
                     {match.path === "/signup" && 
                         
                         <TextInput
-                            name="confirmPassword"
-                            textLabel='Confirma la contrasena'
-                            type='password'
+                            name="confirmaPAss"
+                            textLabel='Confirma la contra'
                             placeholder='.........'
                             handleChange={handleChange}
                         />}
                         <Button
-                        text='Registrate'
+                        text='Entrar'
                         />
                         
                         

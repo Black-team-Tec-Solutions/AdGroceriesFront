@@ -12,7 +12,7 @@ import {Home} from './app/views'
 import Auth from './app/views/auth/Auth'
 
 
-//tonto solo recibe parametros
+//es tonto por que solo recibe parametros
 const Routes =()=>( //el arrowfunction tiene implicito el return
     <Switch>
             <Route exact path="/" component={Home}/>
