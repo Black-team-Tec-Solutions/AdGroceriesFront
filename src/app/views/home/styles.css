@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300&display=swap');
 
-
-
-
-
-
-
 .home-container{
     width: 100vw;
     height: 100vh;
@@ -84,4 +78,3 @@ h2{
 .fruits {
     margin-left: 26%;
 }
-

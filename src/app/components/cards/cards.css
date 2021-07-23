@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300&display=swap');
+
+h1 {
+    font-family: 'Righteous', cursive;
+    color: #fff
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: #fff
+}
+.container{
+    width: 400vw;
+    height: 100vh;
+    margin-top: -25px;
+    background-color: #00ba94;
+}
+
+.divider-custom {
+    margin: -2.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin-top: 50px;
+    
+}
