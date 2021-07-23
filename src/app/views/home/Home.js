@@ -2,9 +2,6 @@ import React from 'react';
 import './styles.css'
 import logo from '../../assets/image/logo.png'
 import {Link} from 'react-router-dom'
-import NavBar from '../../components/navBar/NavBar';
-import frutas from '../../assets/image/frutas.jpeg'
-import oficina from '../../assets/image/oficina.jpeg'
 
 
                 //react.router-dom por defecto
